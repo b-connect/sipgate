@@ -1,5 +1,5 @@
 {
-  "name": "sipgate",
+  "name": "angular2-sipgate",
   "version": "0.1.0",
   "scripts": {
     "build": "ngc -p tsconfig.json",

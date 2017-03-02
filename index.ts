@@ -7,11 +7,13 @@ import {SipgateService} from './src/sipgate.service';
 
 import { BASE_PATH } from './src/api/variables';
 
+import * as api from './src/api';
+
 export * from './src/sipgate.component';
 export * from './src/sipgate.directive';
 export * from './src/sipgate.pipe';
 export * from './src/sipgate.service';
-export * from './src/api/model/AccountResponse';
+
 // export * from './src/models';
 
 

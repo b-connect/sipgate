@@ -1,4 +1,4 @@
-# sipgate
+# Angular2 Sipgate
 
 ## Installation
 
