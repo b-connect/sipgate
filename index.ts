@@ -5,12 +5,15 @@ import {SipgateDirective} from './src/sipgate.directive';
 import {SipgatePipe} from './src/sipgate.pipe';
 import {SipgateService} from './src/sipgate.service';
 
+import { BASE_PATH } from './src/api/variables';
+
 export * from './src/sipgate.component';
 export * from './src/sipgate.directive';
 export * from './src/sipgate.pipe';
 export * from './src/sipgate.service';
-export * from './src/api';
+export * from './src/api/model/AccountResponse';
 // export * from './src/models';
+
 
 @NgModule({
   imports: [
@@ -19,12 +22,15 @@ export * from './src/api';
   declarations: [
     SipgateComponent,
     SipgateDirective,
-    SipgatePipe
+    SipgatePipe,
   ],
   exports: [
     SipgateComponent,
     SipgateDirective,
-    SipgatePipe
+    SipgatePipe,
+  ],
+  providers: [
+    { provide: BASE_PATH, useValue: "https://api.sipgate.com" }
   ]
 })
 export class SipgateModule {
